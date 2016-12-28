@@ -16,4 +16,4 @@ var moviesList = {
     }
 };
 
-module.exports=movies;
+module.exports = moviesList;
