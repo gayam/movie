@@ -3,7 +3,7 @@
 var express = require('express');
 
 var movieRoute = express.Router();
-var movies = require('./movie');
+var moviesList = require('./movie');
 
 movieRoute.get('/', moviesList.list);
 

@@ -3,7 +3,7 @@
 var express = require('express');
 var app = express();
 
-var movieRouter = require('./movie-route');
+
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/development');
 var db = mongoose.connection;
@@ -16,6 +16,8 @@ require('./movies-model');
 app.get('/', function(req, res){
     res.send('Hello from home page');
 });
+
+var movieRouter = require('./movie-route');
 //movies page
 app.use('/movies', movieRouter);
 
